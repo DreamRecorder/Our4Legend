@@ -15,6 +15,9 @@
         <!-- TODO: Delete this line if the key AppName is declared in App.xaml -->
        
         <vm:MainPage_Model x:Key="DesignVM"/>
+        <ControlTemplate x:Key="HS1" TargetType="HubSection">
+        	<Grid Width="650"/>
+        </ControlTemplate>
     </Page.Resources>
     <!--Begin App Bar Binding Patch. If you don't need Binding Top/Bottom Appbar please ignore these code -->
     <!--<Page.DataContext>
@@ -29,7 +32,28 @@
     -->
     <!--End App Bar Binding Patch. If you don't need Binding  Top/Bottom Appbar please ignore these code -->
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"  DataContext="{StaticResource DesignVM}">
-        <TextBlock x:Name="pageTitle" Grid.Column="1" Margin="100" Text="{Binding Title}" Style="{StaticResource HeaderTextBlockStyle}"/>
+        <Hub>
+        	<Hub.Header>
+        		<Grid HorizontalAlignment="Left" VerticalAlignment="Top">
+        			<Grid.ColumnDefinitions>
+        				<ColumnDefinition Width="103"/>
+        				<ColumnDefinition/>
+        			</Grid.ColumnDefinitions>
+        			<TextBlock Margin="0" TextWrapping="Wrap" Text="我4传奇" FontFamily="SentyZHAO 新蒂赵孟頫" Grid.Column="1" FontSize="64"/>
+        		</Grid>
+
+        	</Hub.Header>
+            <HubSection Header="HubSection 0" Template="{StaticResource HS1}">
+                <DataTemplate>
+                    <Grid/>
+                </DataTemplate>
+            </HubSection>
+            <HubSection Header="HubSection 1">
+                <DataTemplate>
+                    <Grid/>
+                </DataTemplate>
+            </HubSection>
+        </Hub>
 
     </Grid>
 </mvvm:MVVMPage>
