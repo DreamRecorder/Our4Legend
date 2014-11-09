@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
     <HasSharedItems>true</HasSharedItems>
-    <SharedGUID>1acc0613-a9e9-4293-8fe0-034be8167ad0</SharedGUID>
+    <SharedGUID>88828e68-f67c-48b6-8790-ea14c618cb58</SharedGUID>
   </PropertyGroup>
   <PropertyGroup Label="Configuration">
     <Import_RootNamespace>Our4Legend</Import_RootNamespace>
@@ -16,6 +16,6 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Startups\StartupFunctions.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\MainPage_Model.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\JournalPage_Model.cs" />
   </ItemGroup>
 </Project>

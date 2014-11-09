@@ -19,30 +19,20 @@ using System . Reflection;
 
 namespace Our4Legend
 {
-	/// <summary>
-	/// An empty page that can be used on its own or navigated to within a Frame.
-	/// </summary>
-	public sealed partial class MainPage : MVVMPage
-	{
-		public MainPage ( )
-		{
+    /// <summary>
+    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// </summary>
+    public sealed partial class JournalPage : MVVMPage
+    {
+        public JournalPage()
+        {
 
-			this . InitializeComponent ( );
-
-			Journal asd=Journal . Currect ( );
-
-			foreach ( var Issues in asd . ListOfIssue )
-			{
-				foreach ( var Articles in Issues . ListOfArticle )
-				{
-					foreach ( var Authors in Articles.ListOfAuthor )
-					{
-
-					}
-				}
-			}
-		}
+            this . InitializeComponent();
 
 
-	}
+
+        }
+
+
+    }
 }

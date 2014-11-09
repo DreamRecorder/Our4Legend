@@ -1,6 +1,6 @@
 ﻿<mvvm:MVVMPage   
     x:Name="pageRoot"
-    x:Class="Our4Legend.MainPage"
+    x:Class="Our4Legend.JournalPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Our4Legend"
@@ -14,7 +14,7 @@
     <Page.Resources>
         <!-- TODO: Delete this line if the key AppName is declared in App.xaml -->
        
-        <vm:MainPage_Model x:Key="DesignVM"/>
+        <vm:JournalPage_Model x:Key="DesignVM"/>
     </Page.Resources>
     <!--Begin App Bar Binding Patch. If you don't need Binding Top/Bottom Appbar please ignore these code -->
     <!--<Page.DataContext>

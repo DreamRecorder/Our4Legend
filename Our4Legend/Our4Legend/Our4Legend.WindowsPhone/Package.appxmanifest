@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
 
-  <Identity Name="50b2930c-249e-41ef-99be-c5e76c1728b6"
-            Publisher="CN=Wang"
+  <Identity Name="d8f42079-f2bd-4cf3-9153-0aa0b252f5fc"
+            Publisher="CN=Class 4"
             Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="50b2930c-249e-41ef-99be-c5e76c1728b6" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="d8f42079-f2bd-4cf3-9153-0aa0b252f5fc" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>Our4Legend.WindowsPhone</DisplayName>
-    <PublisherDisplayName>Wang</PublisherDisplayName>
+    <PublisherDisplayName>Class 4</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 

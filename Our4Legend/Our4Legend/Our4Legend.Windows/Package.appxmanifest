@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
 
-  <Identity Name="d20a63f5-fd30-4f33-b19a-b52eee8fe274"
-            Publisher="CN=Wang"
+  <Identity Name="b0bfd4c6-77f7-4702-bec7-65ae979f5e3f"
+            Publisher="CN=Class 4"
             Version="1.0.0.0" />
 
   <Properties>
     <DisplayName>Our4Legend.Windows</DisplayName>
-    <PublisherDisplayName>Wang</PublisherDisplayName>
+    <PublisherDisplayName>Class 4</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 
