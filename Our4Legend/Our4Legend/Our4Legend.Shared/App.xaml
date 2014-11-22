@@ -3,5 +3,23 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Our4Legend">
+    <Application.Resources>
+        <ControlTemplate x:Key="HubSectionControlTemplate" TargetType="HubSection">
+            <Grid Margin="0,0,0,-2" Background="{TemplateBinding Background}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="40"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="5*"/>
+                    <RowDefinition Height="2*"/>
+                </Grid.RowDefinitions>
+                <StackPanel Grid.Column="1" Grid.Row="1">
+                    <TextBlock TextWrapping="Wrap" Text="{TemplateBinding Header}" FontSize="48" Foreground="{TemplateBinding Foreground}"/>
+                    <TextBlock TextWrapping="Wrap" Text="{TemplateBinding Tag}" FontSize="22" Foreground="{TemplateBinding Foreground}"/>
+                </StackPanel>
+            </Grid>
+        </ControlTemplate>
+    </Application.Resources>
 
 </Application>

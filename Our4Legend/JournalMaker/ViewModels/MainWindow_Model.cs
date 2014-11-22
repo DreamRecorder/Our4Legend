@@ -13,42 +13,37 @@ using System . Threading . Tasks;
 using System . Collections . ObjectModel;
 using System . Runtime . Serialization;
 
-namespace Our4Legend . ViewModels
+namespace JournalMaker . ViewModels
 {
 
-    [DataContract]
-    public class JournalPage_Model : ViewModelBase<JournalPage_Model>
+    public class MainWindow_Model : ViewModelBase<MainWindow_Model>
     {
         // If you have install the code sniplets, use "propvm + [tab] +[tab]" create a property propcmd for command
         // 如果您已经安装了 MVVMSidekick 代码片段，请用 propvm +tab +tab 输入属性 propcmd 输入命令
 
-        public JournalPage_Model()
+        public MainWindow_Model()
         {
-           
+            if ( IsInDesignMode )
+            {
+                Title = "Title is a little different in Design mode";
+            }
 
         }
+
+
 
         //propvm tab tab string tab Title
-
-
-
-
-        public string Saying
+        public String Title
         {
-            get { return _SayingLocator(this) . Value; }
-            set { _SayingLocator(this) . SetValueAndTryNotify(value); }
+            get { return _TitleLocator(this) . Value; }
+            set { _TitleLocator(this) . SetValueAndTryNotify(value); }
         }
-        #region Property string Saying Setup
-        protected Property<string> _Saying = new Property<string> { LocatorFunc = _SayingLocator };
-        static Func<BindableBase,ValueContainer<string>> _SayingLocator= RegisterContainerLocator<string>("Saying" , model => model . Initialize("Saying" , ref model . _Saying , ref _SayingLocator , _SayingDefaultValueFactory));
-        static Func<BindableBase,string> _SayingDefaultValueFactory = 
-            model =>
-            {
-                var vm = CastToCurrentType(model);
-                //TODO: Add the logic that produce default value from vm current status.
-                return default(string);
-            };
+        #region Property String Title Setup
+        protected Property<String> _Title = new Property<String> { LocatorFunc = _TitleLocator };
+        static Func<BindableBase, ValueContainer<String>> _TitleLocator = RegisterContainerLocator<String>("Title" , model => model . Initialize("Title" , ref model . _Title , ref _TitleLocator , _TitleDefaultValueFactory));
+        static Func<String> _TitleDefaultValueFactory = () => "Title is Here";
         #endregion
+
 
 
         #region Life Time Event Handling

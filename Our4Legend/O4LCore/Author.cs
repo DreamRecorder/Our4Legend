@@ -6,15 +6,18 @@ using System . IO;
 
 namespace Our4Legend
 {
-	public class Author
-	{
-		public string FamilyName { get; set; }
+    public class Author
+    {
+        public string FamilyName { get; set; }
 
-		public string FirstName { get; set; }
+        public string FirstName { get; set; }
 
-		public string EmailAddress { get; set; }
+        public string EmailAddress { get; set; }
 
-		public string Introduction { get; set; }
+        public string Introduction { get; set; }
 
-	}
+        public List<Article> ArticleHaveContribute { get; set; }
+
+
+    }
 }

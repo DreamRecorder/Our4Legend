@@ -34,13 +34,13 @@ namespace Our4Legend
 	{
 
 		public ArticlePage ( )
-			: this ( null )
+			//: this ( null )
 		{
 			this . InitializeComponent ( );
 		}
 
 		public ArticlePage ( ArticlePage_Model model )
-			: base ( model )
+			//: base ( model )
 		{
 			this . InitializeComponent ( );
 			this . navigationHelper = new NavigationHelper ( this );

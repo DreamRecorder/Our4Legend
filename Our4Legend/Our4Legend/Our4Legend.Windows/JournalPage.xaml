@@ -13,7 +13,7 @@
     mc:Ignorable="d">
     <Page.Resources>
         <!-- TODO: Delete this line if the key AppName is declared in App.xaml -->
-       
+
         <vm:JournalPage_Model x:Key="DesignVM"/>
     </Page.Resources>
     <!--Begin App Bar Binding Patch. If you don't need Binding Top/Bottom Appbar please ignore these code -->
@@ -29,17 +29,17 @@
     -->
     <!--End App Bar Binding Patch. If you don't need Binding  Top/Bottom Appbar please ignore these code -->
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"  DataContext="{StaticResource DesignVM}">
-    	<Hub Header="我4传奇" FontFamily="SentyZHAO 新蒂赵孟頫">
-    		<HubSection Header="HubSection 0" Width="600">
-    			<DataTemplate>
-    				<Grid/>
-    			</DataTemplate>
-    		</HubSection>
-    		<HubSection Header="HubSection 1">
-    			<DataTemplate>
-    				<Grid/>
-    			</DataTemplate>
-    		</HubSection>
-    	</Hub>
+        <Hub x:Name="Hub_Main" Header="我4传奇" FontFamily="SentyZHAO 新蒂赵孟頫" Loaded="Hub_Loaded">
+            <HubSection Header="HubSection 1" Width="10" Template="{StaticResource HubSectionControlTemplate}" Background="Black">
+                <DataTemplate>
+                    <Grid/>
+                </DataTemplate>
+            </HubSection>
+            <HubSection Header="我4传奇" Template="{StaticResource HubSectionControlTemplate}" Width="600" Tag="我们就是传奇。">
+                <DataTemplate>
+                    <Grid/>
+                </DataTemplate>
+            </HubSection>
+        </Hub>
     </Grid>
 </mvvm:MVVMPage>

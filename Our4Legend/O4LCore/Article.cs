@@ -12,6 +12,35 @@ namespace Our4Legend
     {
         IEnumerable<string> _TextLine;
 
+        IEnumerable<string> _ListOfAuthorName;
+
+        public IEnumerable<string> ListOfAuthorName
+        {
+            get
+            {
+                return _ListOfAuthorName;
+            }
+            set
+            {
+                ListOfAuthor = new List<Author>();
+                //if ( value != null )
+                //{
+                //    foreach ( var name in value )
+                //    {
+                //        foreach ( var author in Journal . Currect . ListOfAuthor )
+                //        {
+                //            if ( name == author . FirstName + " " + author . FamilyName )
+                //            {
+                //                ListOfAuthor . Add(author);
+                //            }
+                //        }
+                //    }
+                //}
+
+                _ListOfAuthorName = value;
+            }
+        }
+
         public IEnumerable<string> TextLine
         {
             get
@@ -26,7 +55,6 @@ namespace Our4Legend
                     {
                         Text += item;
                         Text += Environment . NewLine;
-                        //Text = Text . Trim();
                     }
                 }
                 else
@@ -37,11 +65,11 @@ namespace Our4Legend
             }
         }
 
-        public string Text { get;private set; }
+        public string Text { get; private set; }
 
         public string Title { get; set; }
 
-        public IEnumerable<Author> ListOfAuthor { get; set; }
+        public List<Author> ListOfAuthor { get; set; }
 
     }
 

@@ -34,19 +34,23 @@ namespace Our4Legend
     {
 
         public IssuePage()
-            : this(null)
+            //: this(null)
         {
             this . InitializeComponent();
-        }
-
-        public IssuePage(IssuePage_Model model)
-            : base(model)
-        {
             this . InitializeComponent();
             this . navigationHelper = new NavigationHelper(this);
             this . navigationHelper . LoadState += navigationHelper_LoadState;
             this . navigationHelper . SaveState += navigationHelper_SaveState;
         }
+
+        //public IssuePage(IssuePage_Model model)
+        //    : base(model)
+        //{
+        //    this . InitializeComponent();
+        //    this . navigationHelper = new NavigationHelper(this);
+        //    this . navigationHelper . LoadState += navigationHelper_LoadState;
+        //    this . navigationHelper . SaveState += navigationHelper_SaveState;
+        //}
 
         private NavigationHelper navigationHelper;
 

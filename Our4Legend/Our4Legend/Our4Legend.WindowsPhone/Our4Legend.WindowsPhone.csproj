@@ -143,6 +143,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\IssueMaker\IssueMaker\JournalMakerCore.csproj">
+      <Project>{b2ce446d-a55b-4694-a997-b733ccea38b0}</Project>
+      <Name>JournalMakerCore</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\O4LCore\O4LCore.csproj">
       <Project>{4223154b-cb94-447c-8feb-8ade5f639b37}</Project>
       <Name>O4LCore</Name>
